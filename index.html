@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Cadastro</title>
+
+</head>
+<div class="wrapper">
+<body>
+    <form name="form1" method="post">
+        
+<h1>Cadastrar Usuários</h1>
+
+        <div class="input-box">
+        <input type="text" name="txt_usuario" placeholder="Usuário" size="60" maxlength="40" required>
+            <i class='bx bxs-user'></i>
+        </div>
+                
+        <div class="input-box">
+        <input type="email" name="txt_email" placeholder="Email" size="60" maxlength="60" required>
+            <i class='bx bxs-envelope' ></i>
+        </div>
+                    
+        <div class="input-box">
+        <input type="password" name="txt_senha"  placeholder="Senha" size="60" maxlength="20" required>
+            <i class='bx bxs-lock-alt' ></i>
+        </div>
+        
+        <div class="botao-cadastrar">
+        <input id="btn" type="submit" value="Cadastrar" onclick="document.form1.action='cadastrar.php'">
+        </div>
+            
+    </form>
+</div>
+        </body>
+</html>
